@@ -7,6 +7,8 @@
     <title>Design Responsivo - Contato</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style-contato.css">
+    <link rel="stylesheet" href="css/style-pagina.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -22,30 +24,30 @@
         </nav>
     </header>
     <main>
-        <header>
-            <h1>Contato</h1>
+        <header class="pagina-cabecalho">
+            <h1 class="pagina-cabecalho__titulo">Contato</h1>
         </header>
-        <section>
-            <p>Suspendisse convallis, turpis vitae placerat luctus, est felis dictum augue.</p>
-            <form action="#"> 
-                <div>
-                    <label for="nome">Nome</label><br>
-                    <input type="text" name="nome" id="nome">
+        <section class="pagina-conteudo">
+            <p class="text-center">Suspendisse convallis, turpis vitae placerat luctus, est felis dictum augue.</p>
+            <form action="#" class="formulario"> 
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="nome">Nome</label><br>
+                    <input class="formulario__campo" type="text" name="nome" id="nome">
                 </div>
-                <div>
-                    <label for="email">E-mail</label><br>
-                    <input type="email" name="email" id="email">
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="email">E-mail</label><br>
+                    <input class="formulario__campo" type="email" name="email" id="email">
                 </div>
-                <div>
-                    <label for="mensagem">Mensagem</label><br>
-                    <textarea cols="30" rows="10" name="mensagem" id="mensagem"></textarea>
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="mensagem">Mensagem</label><br>
+                    <textarea class="formulario__campo" cols="30" rows="10" name="mensagem" id="mensagem"></textarea>
                 </div>
-                <input type="submit" value="Enviar">
+                <input class="formulario__botao" type="submit" value="Enviar">
             </form>
-            <p>Maecenas facilisis volutpat ipsum, sed faucibus tortor aliquam non.<br>
+            <p class="text-center">Maecenas facilisis volutpat ipsum, sed faucibus tortor aliquam non.<br>
                 Aliquam erat volutpat. Vivamus cursus pulvinar turpis, nec blandit augue maximus ac.
             </p>
-            <div>
+            <div class="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14753.558953355081!2d-42.9845009802246!3d-22.41435215!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1532037023752" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </section>

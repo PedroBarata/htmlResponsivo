@@ -1,0 +1,39 @@
+.pagina-cabecalho {
+    background-color: #dd3f3f;
+    color: #fff;
+    padding: 40px 0px;
+    background-image: url("../img/cabecalho-pagina-bg.jpg");
+    /* Fixa o background enqto a pagina se move */
+    background-attachment: fixed;
+}
+
+.pagina-cabecalho__titulo {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Seletor de pseudoelemento (para fazer o "tracinho" embaixo)*/
+.pagina-cabecalho__titulo::after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 50px;
+    height: 3px;
+    margin: 0 auto;
+    /* Colocar APÓS AO "MARGIN", se for colocado antes, ele vai sobrescrever! */
+    margin-top: 20px;
+}
+
+.pagina-conteudo {
+    padding: 25px 15px;
+}
+
+.pagina-conteudo p {
+    color: #3a3a3a; /* Boa prática: colocar uma cor na letra, diferente do preto, no fundo branco */
+    line-height: 22px; /* Espaçamento entre-linhas */
+    margin: 20px 0px;
+}
+
+.text-center {
+    text-align: center;
+}
